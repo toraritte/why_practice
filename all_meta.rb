@@ -43,7 +43,7 @@ class Attcrib
     attr_accessor( *things )
   end
 
-  def self.class_meth( *another )
+  def self.class_meth( *another )         # preparing for dwemthy
     return @class_meth if another.empty?
     
     attr_accessor( *another )
