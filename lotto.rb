@@ -16,6 +16,7 @@ class LottoTicket
   def self.random_new
     new( rand(25)+1, rand(25)+1, rand(25)+1 )
   rescue ArgumentError
+    # this was "redo" originally that did not work
     retry
   end
 
