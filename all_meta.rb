@@ -14,9 +14,9 @@ class Playground
     def d; end                            # instance method
   end
 
-  metaclass.instance_eval do              # class method
-    define_method(:e) {}
-    def f; end
+  metaclass.instance_eval do              
+    define_method(:e) {}                  # class method
+    def f; end                            # "double" class method
   end
 
   metaclass.class_eval do
