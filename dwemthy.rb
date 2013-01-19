@@ -1,5 +1,5 @@
 class Creature # reimplementing in module?
-               # trying it with method_missin?
+               # trying it with method_missing?
   def self.mc
     class << self; self; end
   end
